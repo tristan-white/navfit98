@@ -9,9 +9,15 @@ export default function Home() {
       <p className="tagline">a replacement for navfit98</p>
 
       <style jsx>{`
-        .splash {
-          min-height: 100vh;
+        :global(html, body) {
           margin: 0;
+          padding: 0;
+        }
+
+        .splash {
+          min-height: 100dvh;
+          margin: 0;
+          box-sizing: border-box;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -27,7 +33,7 @@ export default function Home() {
         .link {
           color: #1a2133;
           text-decoration: none;
-          font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+          font-family: "IBM Plex Mono", "SFMono-Regular", "Menlo", monospace;
           font-size: clamp(1.8rem, 4vw, 2.6rem);
           font-weight: 500;
           letter-spacing: 0.015em;
